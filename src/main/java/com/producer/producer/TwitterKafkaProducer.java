@@ -1,6 +1,9 @@
-package ml.dhoomilsheta.app.producer;
+package com.producer.producer;
 
 import com.google.gson.Gson;
+import com.producer.config.KafkaConfiguration;
+import com.producer.model.Tweet;
+import com.producer.producer.callback.BasicCallback;
 import com.twitter.hbc.ClientBuilder;
 import com.twitter.hbc.core.Client;
 import com.twitter.hbc.core.Constants;
@@ -8,10 +11,7 @@ import com.twitter.hbc.core.endpoint.StatusesFilterEndpoint;
 import com.twitter.hbc.core.processor.StringDelimitedProcessor;
 import com.twitter.hbc.httpclient.auth.Authentication;
 import com.twitter.hbc.httpclient.auth.OAuth1;
-import ml.dhoomilsheta.app.config.KafkaConfiguration;
-import ml.dhoomilsheta.app.config.TwitterConfiguration;
-import ml.dhoomilsheta.app.model.Tweet;
-import ml.dhoomilsheta.app.producer.callback.BasicCallback;
+import com.producer.config.TwitterConfiguration;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.LongSerializer;
 import org.apache.kafka.common.serialization.StringSerializer;

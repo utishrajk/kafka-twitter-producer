@@ -1,4 +1,4 @@
-package ml.dhoomilsheta.app.config;
+package com.producer.config;
 
 public class KafkaConfiguration {
     public static final String SERVERS = "127.0.0.1:9092";

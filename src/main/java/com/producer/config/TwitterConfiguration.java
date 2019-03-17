@@ -1,4 +1,4 @@
-package ml.dhoomilsheta.app.config;
+package com.producer.config;
 
 public class TwitterConfiguration {
     public static final String CONSUMER_KEY = "???";
