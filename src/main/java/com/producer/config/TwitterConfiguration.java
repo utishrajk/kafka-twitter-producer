@@ -6,10 +6,10 @@ import java.util.Properties;
 
 
 public class TwitterConfiguration {
-    public static final String CONSUMER_KEY = "mQR1GLXJ7S7Pp9AqYdCB0Ad7d";
-    public static final String CONSUMER_SECRET = "CYnQSjnEwCJZsDwupnRsd0Fz51Exba1sc1z1FN6VdCJJHpG1Eh";
-    public static final String ACCESS_TOKEN = "2315700001-8gND2G2SZt2lushQC559gnygin6vuYaH4GI5bX8";
-    public static final String TOKEN_SECRET = "rnUeClLwc4cFOa7G2DAGaTxqelvxp7cb0jXbH2Fcbfhww";
+    public static final String CONSUMER_KEY = "";
+    public static final String CONSUMER_SECRET = "";
+    public static final String ACCESS_TOKEN = "";
+    public static final String TOKEN_SECRET = "";
     public static final String HASHTAG = "#nepal";
 
     public static Properties getProperties() {
