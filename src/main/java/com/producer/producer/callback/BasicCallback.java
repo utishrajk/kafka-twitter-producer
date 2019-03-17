@@ -3,6 +3,7 @@ package com.producer.producer.callback;
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.RecordMetadata;
 
+//Not used right now..
 public class BasicCallback implements Callback {
     @Override
     public void onCompletion(RecordMetadata metadata, Exception exception) {
