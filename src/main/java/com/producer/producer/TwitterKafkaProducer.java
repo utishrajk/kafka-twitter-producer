@@ -31,14 +31,20 @@ public class TwitterKafkaProducer {
         TweetFilter filter = new TweetFilter();
         source.setCustomEndpointInitializer(filter);
 
-        FlinkKafkaProducer<String> producer = createKafkaProducer("twitterTopic031719");
+        FlinkKafkaProducer<String> producer = createKafkaProducer("twitterTopic0317191009");
 
         DataStream<String> inputStream = env.addSource(source);
 
-        inputStream.addSink(producer);
+        inputStream.filter(item -> {
+            if(item == null || item.equals("") || item.length() < 10) {
+                return false;
+            }
+            return true;
+        }).addSink(producer);
 
         inputStream.print();
 
+        System.out.println("starting environment.execute(...)");
         env.execute("starting the twitter producer");
     }
 
